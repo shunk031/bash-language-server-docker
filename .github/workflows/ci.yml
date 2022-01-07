@@ -1,6 +1,17 @@
 name: CI
 
-on: [push, pull_request]
+on:
+  push:
+    branches: [master]
+    paths:
+      - ".github/workflows/**"
+      - Dockerfile
+
+  pull_request:
+    branches: [master]
+    paths:
+      - ".github/workflows/**"
+      - Dockerfile
 
 jobs:
   build_and_push:
