@@ -15,5 +15,5 @@ docker build -t bash-language-server .
 - Add the alias to `~/.bashrc`.
 
 ```shell
-echo 'alias bash-language-server="docker run --rm -i docker pull ghcr.io/shunk031/bash-language-server:latest"' >> ~/.bashrc
+echo 'alias bash-language-server="docker run --rm -i ghcr.io/shunk031/bash-language-server:latest"' >> ~/.bashrc
 ```
